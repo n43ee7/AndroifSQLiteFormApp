@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/srch"
+        android:text="search"
+        android:title="search"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/add"
+        android:text="Add Person"
+        android:title="Add Person"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/share"
+        android:text="Share Person"
+        android:title="Share Person"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/trash"
+        android:text="Delete"
+        android:title="Delete"
+        app:showAsAction="always"/>
+
+    <item
+        android:text="New Group"
+        android:title="New Group"/>
+
+    <item
+        android:text="Starred Messages"
+        android:title="Starred Messages"/>
+
+    <item
+        android:text="Settings"
+        android:title="Settings"
+        />
+
+    <item
+        android:id="@+id/exit"
+        android:text="Exit"
+        android:title="Exit"/>
+
+</menu>

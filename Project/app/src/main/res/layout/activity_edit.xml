@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TableLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:stretchColumns="1" >
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text="@string/id"
+                    android:textSize="20sp"
+                    android:textColor="#86069C"/>
+                <EditText
+                    android:id="@+id/editText_ID"
+                    android:layout_width="0dp"
+                    android:textColor="#034E47"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:autofillHints="" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Name:"
+                    android:textSize="20sp"
+                    android:textColor="#86069C"/>
+                <EditText
+                    android:id="@+id/et_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="#034E47"/>
+            </TableRow>
+        </TableLayout>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:layout_margin="10dp"
+            android:src="@drawable/avatar"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birth Year:"
+            android:textSize="20sp"
+            android:textColor="#86069C"/>
+        <Spinner
+            android:id="@+id/birthyear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@xml/array" >
+        </Spinner>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birth Month:"
+            android:textSize="20sp"
+            android:textColor="#86069C"/>
+        <Spinner
+            android:id="@+id/birthmonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@xml/array" >
+        </Spinner>
+    </LinearLayout>
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender:"
+            android:textSize="20sp"
+            android:textColor="#86069C"
+            android:layout_marginRight="20dp"/>
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#034E47"
+            android:buttonTint="#EC3017"
+            android:checked="true"
+            android:text="Male" />
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#EC3017"
+            android:textColor="#034E47"
+            android:text="Female" />
+        <RadioButton
+            android:id="@+id/others"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#034E47"
+            android:buttonTint="#EC3017"
+            android:text="Others" />
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginEnd="20dp"
+            android:text="Interests:"
+            android:textColor="#86069C"
+            android:textSize="20sp" />
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/Reading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#EC3017"
+                    android:textColor="#034E47"
+                    android:checked="false"
+                    android:text="@string/reading" >
+                </CheckBox>
+                <CheckBox
+                    android:id="@+id/Music"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#EC3017"
+                    android:textColor="#034E47"
+                    android:checked="false"
+                    android:text="@string/music" >
+                </CheckBox>
+            </TableRow>
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/food"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#EC3017"
+                    android:textColor="#034E47"
+                    android:checked="false"
+                    android:text="@string/food" >
+                </CheckBox>
+                <CheckBox
+                    android:id="@+id/travel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="#EC3017"
+                    android:textColor="#034E47"
+                    android:checked="false"
+                    android:text="@string/travel" >
+                </CheckBox>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chinese HSK Level:"
+        android:textSize="20sp"
+        android:textColor="#86069C"/>
+    <RatingBar
+        android:id="@+id/ratingBar1"
+        android:numStars="5"
+        android:backgroundTint="#0B8F11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:outlineAmbientShadowColor="#00BCD4"
+        android:clickable="true" >
+    </RatingBar>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/work_experience"
+        android:layout_marginEnd="20dp"
+        android:textSize="20sp"
+        android:textColor="#86069C"
+        />
+    <EditText
+        android:id="@+id/EditWorkExperience"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:textColorHint="#6AA6A1"
+        android:hint="@string/write_your_work_experience_hear"
+        android:text=""
+        android:autofillHints=""
+        tools:ignore="TextFields">
+    </EditText>
+    <Button
+        android:id="@+id/Save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="@string/save" >
+    </Button>
+</LinearLayout>
